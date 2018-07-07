@@ -34,28 +34,31 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
   
     <!-- Left Column -->
     <div class="w3-third">
-    
+   
       <div class="w3-white w3-text-grey w3-card-4">
+         <div class="w3-container">
+          <p align="center" style="color:DodgerBlue;"><b><a href="/index.html" style="text-decoration: none"><font size="8">HOME</font></a></b></p>  
+          </div> 
+          
         <div class="w3-display-container">
           <img src="/w3images/foto.jpg" style="width:100%" alt="Foto">
-          <div class="w3-display-bottomleft w3-container w3-text-blue">
-            <h2 style="background-color:white">&nbsp;<a href="/index.html" style="text-decoration: none">Pietro Bressana</a>&nbsp;</h2>
-          </div>
         </div>
         <div class="w3-container">
+         <p style="color:DodgerBlue;"><i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-teal"></i><b>Pietro Giuseppe Bressana</b></p>  
           <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>PhD Student</p>           
-            <p><i class="fa fa-university fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.usi.ch/" target="_blank">Universita' della Svizzera italiana</a></p>
+            <p><i class="fa fa-university fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.usi.ch/" target="_blank">Universita' della Svizzera italiana (USI)</a></p>
             <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://goo.gl/maps/2GQpmSwWUED2" target="_blank">Lugano, Switzerland</a></p>
             <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="mailto:pietro.bressana@usi.ch" target="_blank">E-mail</a></p>
             <p><i class="fa fa-linkedin fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://www.linkedin.com/in/pietrobressana" target="_blank">Linkedin</a>
             </p>
             <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="https://github.com/pietrobressana" target="_blank">GitHub</a></p>
-            <p><i class="fa fa-file-text-o fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="/docs/cv.pdf" target="_blank">CV (Mar 2018)</a></p>
+            <p><i class="fa fa-file-text-o fa-fw w3-margin-right w3-large w3-text-teal"></i><a href="/docs/cv.pdf" target="_blank">CV (Jul 2018)</a></p>
 
         </div>
       </div><br>
 
     <!-- End Left Column -->
+        
     </div>
 
     <!-- Right Column -->
@@ -66,62 +69,35 @@ html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
         <div class="w3-container w3-card w3-white">
         <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-flask fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Research Projects</h2>
         
-        <!--P4Debug-->
+        <!--NetDebug-->
         <div class="w3-container">
-          <h5 class="w3-opacity"><b>P4Debug</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2017 - Present</h6>
-          <p>Despite the importance of computer networks and
-            the abundance of network problems, engineers lack the tools
-            and support necessary for debugging network hardware.<br>
-            This appears to be changing. A new breed of switches that can be programmed with high-level languages such as P4 match the speed of fixed function devices.<br>
-            This trend raises an important question:
-            Can we leverage this new programmability for debugging
-            network hardware?<br>
-            The goal of this project is to extend programmable network hardware with functionality to enable debugging.<br>
-            We propose a novel debugging framework, named P4Debug,
-            that leverages recent advances in network programmability
-            and hardware design, by providing unprecedented visibility into
-            the internal state and operations of network devices.<br>
-            To evaluate P4Debug, we will develop a prototype that leverages several existing technologies, including the NetFPGA SUME framework and Xilinx SDNet P4-to-FPGA compiler.</p>
+          <h5 class="w3-opacity"><b>NetDebug</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017 - Present</h6>
+          <p>A programmable framework for validating data planes.</p>
           <hr>
         </div>
             
         <!--Emu-->
         <div class="w3-container">
           <h5 class="w3-opacity"><b>Emu</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2017 - Sep 2017</h6>
-          <p>Emu is a framework for network functions on FPGAs, which builds upon Kiwi, a HLS compiler that allows computational scientists
-            to program FPGAs with .NET code.<br>
-            The goal of Emu is to make it easy for software developers with
-            no expertise in hardware languages to quickly develop, test, and deploy network applications on an FPGA.<br>
-            Moreover, using Emu, developers can run their network functions as normal processes, using virtual or real NICs, and using network simulators, simplifying debugging and testing.
-            Indeed, the current implementation of Emu supports CPUs, simulation environments, and FPGAs.<br>
-            Further, Emu provides debugging and profiling tools that enable developers to inspect the behavior of the application at runtime.</p>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2017</h6>
+          <p>A framework for network functions on FPGAs.</p>
           <hr>
         </div>
             
         <!--NetPaxos-->
         <div class="w3-container">
             <h5 class="w3-opacity"><b><a href="http://www.inf.usi.ch/faculty/soule/netpaxos.html" target="_blank">NetPaxos</a></b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2016 - Aug 2016</h6>
-          <p>The goal of this project is to develop a new set of optimized consensus protocols that leverage recent advances in network programmability and       hardware design.<br>
-              These protocols will dramatically improve the performance of storage and replication systems that are the fundamental infrastructure
-              for distributed and cloud computing services.<br>
-              My main task as a research assistant was to implement Paxos consensus protocol inside NetFPGA SUME boards using
-              Connectal Framework (Cornell University), NetFPGA SUME Framework (Cambridge University) and Xilinx SDNet.</p>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016</h6>
+          <p>Consensus as a network service.</p>
           <hr>
         </div>
             
         <!--exaFPGA-->
         <div class="w3-container">
             <h5 class="w3-opacity"><b><a href="http://exafpga.necst.it/" target="_blank">exaFPGA</a></b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2014 - Dec 2015</h6>
-          <p>This project focuses on automatic hardware acceleration of C code with an explicit focus on power/performance metric,
-            for the next generation of super-computing platforms,
-            which is expected to deliver unprecedented performance
-            for the benefit of all the scientific disciplines involving
-            huge amount of computations.<br>
-            As a master’s student, I was in charge to design and to build the multi-FPGA architecture of the system.</p>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2015</h6>
+          <p>Hardware acceleration for the next generation of super-computing platforms.</p>
           <hr>
         </div>
 
